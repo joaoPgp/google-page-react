@@ -1,0 +1,67 @@
+main {
+   
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+main .container-logo img {
+    height: 100px;
+}
+
+main .container-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    border: 1px solid gainsboro;
+    border-radius: 30px;
+    width: 85%;
+}
+
+main .container-search:hover {
+    box-shadow: 0px 1px 3px 1px gainsboro;
+}
+
+main .container-search .search-icon {
+    padding: 10px;
+    width: 20px;
+}
+
+main .container-search input {
+    border: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+main .container-search input:focus{
+    outline: 0;
+}
+
+main .container-search .mic-icon {
+    padding: 10px;
+}
+
+
+main .container-buttons {
+   display: flex;
+   gap: 10px;
+}
+
+
+main .container-translate a {
+    text-decoration: none;
+    color: blue;
+}
+
+main .container-translate a:hover {
+    text-decoration: underline;
+}
