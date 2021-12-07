@@ -1,11 +1,11 @@
-button {
+.btn-link {
     background-color: inherit;
     border: 0;
     color: blue;
     font-size: 13px;
 }
 
-button:hover {
+.btn-link:hover {
    text-decoration: underline;
    cursor: text;
 }
