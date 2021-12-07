@@ -6,7 +6,7 @@ import Button from '../Button';
 import { useState } from 'react';
 import Link from '../Link';
 
-function Main(isPortuguese, translate) {
+function Main({ isPortuguese, translate }) {
    const [queryValue, setQueryValue] = useState('');
 
    function search() {
@@ -18,6 +18,7 @@ function Main(isPortuguese, translate) {
       if (clicouEnter) {
          search();
       }
+
    }
 
    {/*var textoDoLinkTraducao;
@@ -36,7 +37,6 @@ function Main(isPortuguese, translate) {
    return (
 
       <main>
-         {isPortuguese ? 'é English' : 'nao é portuges'}
          <div className="container-logo">
             <img src={GoogleLogo} alt="Logo do google" />
          </div>
