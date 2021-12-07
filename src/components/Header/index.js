@@ -2,7 +2,7 @@ import './style.css';
 import { ReactComponent as AppsIcon } from './../../assets/images/apps.svg'
 import Button from '../Button';
 
-function Header() {
+function Header({ isPortuguese }) {
    return (
       <header>
          <nav>
@@ -12,14 +12,16 @@ function Header() {
                </li>
                <li>
                   <a id="link-images" href="https://www.google.com.br/imghp?hl=pt-BR&ogbl">
-                     Images
+                     {isPortuguese ? 'Images' : 'Imagens'}
                   </a>
                </li>
                <li className="apps-icon">
                   <AppsIcon></AppsIcon>
                </li>
                <li>
-                  <Button>Sing In</Button>
+                  <Button>
+                     {isPortuguese ? 'Sing In' : 'Fazer Login'}
+                  </Button>
                </li>
             </ul>
          </nav>
