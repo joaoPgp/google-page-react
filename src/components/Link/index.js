@@ -2,7 +2,7 @@ import './style.css';
 
 function Link({ children, onClick }) {
    return (
-      <button onClick={onClick}>{children}</button>
+      <button className='btn-link' onClick={onClick}>{children}</button>
    )
 }
 
